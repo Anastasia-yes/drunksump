@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        
+        <title>Chevy Questions</title>
+<style>
+    .detail_link {
+        width: 24%;
+        display: inline-block;
+        font-size: 12px;
+        margin: 0;
+    }
+    .detail_link a {
+        color: #6633cc;
+    }
+    .right_block {
+        border: 1px dotted gray;
+        background: #eee;
+        margin-top: 30px;
+        border-radius: 5px;
+        padding: 15px;
+    }
+    .right_block p{
+        color:  #804000;
+        font-size: 12px;
+    }
+    .detail_time{
+        color: black;
+        font-weight: 800;
+    }
+    .right_block h5 {
+        margin-bottom: 15px;
+    }
+</style>
+    </head>
+    <body>
+
+<?php
+include("config.php");
+include("nav.php");
+?>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="polaroid">
+                        <img src="img/model/img1.gif" style="width:100%">
+                        <div class="imgtext_container">
+                            <p>Capricornia Historical Motor Club</p>
+                        </div>
+                    </div>
+                    <div class="polaroid">
+                        <img src="img/model/img2.gif" style="width:100%">
+                        <div class="imgtext_container">
+                            <p>The Brisbane Vintage Auto Club Inc</p>
+                        </div>
+                    </div>
+                    <div class="polaroid">
+                        <img src="img/model/img3.gif" alt="Norther Lights" style="width:100%">
+                        <div class="imgtext_container">
+                            <p>The Bundaberg Vintage Vehicle Club</p>
+                        </div>
+                    </div>
+                    <div class="polaroid">
+                        <img src="img/model/img4.gif" style="width:100%">
+                        <div class="imgtext_container">
+                            <p>The Gladstone Vintage and Classic Carriage Club</p>
+                        </div>
+                    </div>
+                    <div class="polaroid">
+                        <img src="img/model/img5.gif" style="width:100%">
+                        <div class="imgtext_container">
+                            <p>The Queensland Jaguar Drivers Club(Capricornia)</p>
+                        </div>
+                    </div>
+                    <div class="polaroid">
+                        <img src="img/model/img6.gif" style="width:100%">
+                        <div class="imgtext_container">
+                            <p>The Dales Historic Vehicle Society</p>
+                        </div>
+                    </div>
+                    <div class="polaroid">
+                        <img src="img/model/img7.gif" style="width:100%">
+                        <div class="imgtext_container">
+                            <p>The Surrey Vintage Vehicle Society</p>
+                        </div>
+                    </div>
+                    <div class="polaroid">
+                        <img src="img/model/img8.gif" style="width:100%">
+                        <div class="imgtext_container">
+                            <p>Stationary Engines</p> 
+                            <p>We would like your Classic car Club to be a part of Drump-sump.com</p>
+                        </div>
+                    </div>
+                    <div class="polaroid">
+                        <div class="imgtext_container">
+                            <p>Classic Car Insurance</p>
+                        </div>
+                        <img src="img/model/imgLast.gif" style="width:100%">
+                        <div class="imgtext_container">
+                            <p>Who you gonna call?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <form class="contact_form">
+                        <h3 class="text-center">Contact Us</h3>
+                        <div class="alert alert-primary" role="alert">
+                            <p>
+                                Yes, It is free for non Members to place an Advert.
+                                We want to list all the parts you have ..or need.
+                            </p>
+                            <label class="form_description">
+                                list your advert  as wish it to appear -  'think'  before adding your email address
+                            </label>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="inputEmail1" class="col-sm-4 col-form-label">Email or Phone Number</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputEmail1">
+                                <label class="form_description">
+                                    Place a phone  number or email address on this form - or nobody can contact you!
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputEmail2" class="col-sm-4 col-form-label">Email(Not for publication)</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputEmail2">
+                                <label class="form_description">
+                                    Members only can contact you!
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="textMessage">Message</label>
+                            <textarea class="form-control" id="textMessage" rows="3"></textarea>
+                        </div>
+
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <label class="col-form-label col-sm-2 pt-0">Type</label>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            Ask a question
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            Car for sale
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                                        <label class="form-check-label" for="gridRadios3">
+                                            Parts for sale
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                                        <label class="form-check-label" for="gridRadios3">
+                                            Wanted
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="memberFlag" onchange="toggleMemberArea()">
+                                    <label class="form-check-label" for="memberFlag">
+                                        I am a Member
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form_member_area">
+                            <label class="member_area_title">
+                                Member Area
+                            </label>
+                            <div class="form-group row">
+                                <label for="imageLink" class="col-sm-4 col-form-label">Image Link</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="imageLink">
+                                    <label class="form_description">
+                                        Please ad this image link to the advert . . . 
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="password" class="col-sm-4 col-form-label">Password</label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" id="password">
+                                    <label class="form_description">
+                                        place member password here - this will ensure non members can contact you via pod .. .
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-12 text-center">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                                <button type="submit" class="btn btn-secondary">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="list_link">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Brand
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <?php
+                                            $sql = "SELECT id, name, shortName FROM brand";
+                                            $result = $conn->query($sql);
+                                            
+                                            if ($result->num_rows > 0) {
+                                                // output data of each row
+                                                while($row = $result->fetch_assoc()) {
+                                                    echo "<p class='detail_link'><a href='".$row["shortName"]."/index.html'>".$row["name"]." Parts</a></p>";
+                                                }
+                                            } else {
+                                                echo "Have no brand in database!";
+                                            }
+                                        ?>
+                                        <p class="detail_link"><a href="commer-parts/index.html">Commer</a></p>
+                                        <p class="detail_link"><a href="auburn-parts/index.html"> Cord Cars</a></p>
+                                        <p class="detail_link"><a href="daihatsu-parts/index.html"> Daihatsu</a></p>
+                                        <p class="detail_link"><a href="jaguar-parts/index.html">Daimler Parts</a></p>
+                                        <p class="detail_link"><a href="datsun-parts/index.html">Datsun Parts</a></p>
+                                        <p class="detail_link"><a href="desoto-parts/index.html">De Soto Parts.</a></p>
+                                        <p class="detail_link"><a href="dodge-parts/index.html">Dodge Parts.</a></p>
+                                        <p class="detail_link"><a href="durant-parts/index.html">Durant Parts.</a></p>
+                                        <p class="detail_link"><a href="essex-parts/index.html">Essex Parts.</a></p>
+                                        <p class="detail_link"><a href="ferrari-parts/index.html">Ferrari - parts</a></p>
+                                        <p class="detail_link"><a href="fiat-parts/index.html">Fiat Parts.</a></p>
+                                        <p class="detail_link"><a href="foden-parts/index.html"> foden-parts</a></p>
+                                        <p class="detail_link"><a href="ford-parts/index.html">Ford parts</a></p>
+                                        <p class="detail_link"><a href="gmc-parts/index.html">GM parts</a></p>
+                                        <p class="detail_link"><a href="graham-parts/index.html">Graham Parts.</a></p>
+                                        <p class="detail_link"><a href="harley-davidson/index.html">Harley Davidson</a></p>
+                                        <p class="detail_link"><a href="hillman-parts/index.html">Hillman Parts.</a></p>
+                                        <p class="detail_link"><a href="holden-parts/index.html">Holden Parts</a></p>
+                                        <p class="detail_link"><a href="honda-parts/index.html">Honda Parts</a></p>
+                                        <p class="detail_link"><a href="hudson-parts/index.html">Hudson Parts</a></p>
+                                        <p class="detail_link"><a href="humber-parts/index.html">Humber Parts.</a></p>
+                                        <p class="detail_link"><a href="hupmobile-parts/index.html">Hupmobile Parts</a></p>
+                                        <p class="detail_link"><a href="hyundai-cars/index.html">Hyundai cars</a></p>
+                                        <p class="detail_link"><a href="italia-parts/index.html">Italia parts</a></p>
+                                        <p class="detail_link"><a href="infiniti-parts/index.html">Infiniti parts</a></p>
+                                        <p class="detail_link"><a href="international-parts/index.html">International Parts</a></p>
+                                        <p class="detail_link"><a href="isuzu-parts/index.html">Isuzu</a></p>
+                                        <p class="detail_link"><a href="jaguar-parts/index.html">Jaguar Parts</a></p>
+                                        <p class="detail_link"><a href="jeep-parts/index.html">Jeep Parts</a></p>
+                                        <p class="detail_link"><a href="jowett-parts/index.html"> Jowett Parts</a></p>
+                                        <p class="detail_link"><a href="kaiser-parts/index.html">Kaiser</a></p>
+                                        <p class="detail_link"><a href="frazer-parts/index.html">Frazer</a></p>
+                                        <p class="detail_link"><a href="frazer-parts/index.html">Franklin</a></p>
+                                        <p class="detail_link"><a href="rover-parts/index.html">Land Rover</a></p>
+                                        <p class="detail_link"><a href="lancia-parts/index.html">Lancia Parts.</a></p>
+                                        <p class="detail_link"><a href="leyland-parts/index.html">Leyland Parts</a></p>
+                                        <p class="detail_link"><a href="lincoln-parts/index.html">Lincoln Parts.</a></p>
+                                        <p class="detail_link"><a href="mack-parts/index.html">Mack parts</a></p>
+                                        <p class="detail_link"><a href="mazda-parts/index.html">Mazda Parts.</a></p>
+                                        <p class="detail_link"><a href="mercury-parts/index.html">Mercury</a></p>
+                                        <p class="detail_link"><a href="mercedes-parts/index.html">Mercedes Parts.</a></p>
+                                        <p class="detail_link"><a href="mg-parts/index.html">MG parts</a></p>
+                                        <p class="detail_link"><a href="mitsubishi-parts/index.html">Mitsubishi</a></p>
+                                        <p class="detail_link"><a href="mopar-parts/index.html">Mopar</a></p>
+                                        <p class="detail_link"><a href="morris-parts/index.html">Morris Parts.</a></p>
+                                        <p class="detail_link"><a href="nash-parts/index.html">Nash Parts</a></p>
+                                        <p class="detail_link"><a href="datsun-parts/index.html">Nissan Parts</a></p>
+                                        <p class="detail_link"><a href="oakland-parts/index.html">Oakland Parts.</a></p>
+                                        <p class="detail_link"><a href="oldsmobile-parts/index.html">Oldsmobile Parts.</a></p>
+                                        <p class="detail_link"><a href="opel-parts/index.html">Opel - parts</a></p>
+                                        <p class="detail_link"><a href="packard-parts/index.html">Packard Parts</a></p>
+                                        <p class="detail_link"><a href="peugeot-parts/index.html">Peugeot Parts.</a></p>
+                                        <p class="detail_link"><a href="perkins-parts/index.html">Perkins Parts.</a></p>
+                                        <p class="detail_link"><a href="pierce-arrow/index.html">Pierce Arrow.</a></p>
+                                        <p class="detail_link"><a href="plymouth-parts/1946.html">Plymouth Parts</a></p>
+                                        <p class="detail_link"><a href="pontiac-parts/index.html">Pontiac Parts</a></p>
+                                        <p class="detail_link"><a href="porsche-parts/index.html">Porsche Parts</a></p>
+                                        <p class="detail_link"><a href="rambler-parts/index.html"> Rambler Parts.</a></p>
+                                        <p class="detail_link"><a href="renault-parts/index.html">Renault Parts.</a></p>
+                                        <p class="detail_link"><a href="reo-parts/index.html"> Reo Parts.</a></p>
+                                        <p class="detail_link"><a href="riley-parts/index.html"> Riley Parts.</a></p>
+                                        <p class="detail_link"><a href="rolls-parts/index.html">Rolls Royce Parts</a></p>
+                                        <p class="detail_link"><a href="rover-parts/index.html"> Rover Parts.</a></p>
+                                        <p class="detail_link"><a href="durant-parts/index.html">Rugby Parts.</a></p>
+                                        <p class="detail_link"><a href="saab-parts/index.html">Saab parts</a></p>
+                                        <p class="detail_link"><a href="scammel-parts/index.html">Scammell Parts.</a></p>
+                                        <p class="detail_link"><a href="singer-parts/index.html">Singer Parts.</a></p>
+                                        <p class="detail_link"><a href="durant-parts/index.html">Star Parts.</a></p>
+                                        <p class="detail_link"><a href="stearns-parts/index.html">Stearns Parts</a></p>
+                                        <p class="detail_link"><a href="studebaker-parts/index.html">Studebaker Parts.</a></p>
+                                        <p class="detail_link"><a href="sunbeam-parts/index.html"> Sunbeam Parts</a></p>
+                                        <p class="detail_link"><a href="suzuki-parts/index.html">Suzuki parts</a></p>
+                                        <p class="detail_link"><a href="toyota-parts/index.html">Toyota Parts.</a></p>
+                                        <p class="detail_link"><a href="triumph-parts/index.html">Triumph Parts.</a></p>
+                                        <p class="detail_link"><a href="willys-parts/index.html">Whippet Parts.</a></p>
+                                        <p class="detail_link"><a href="willys-parts/index.html">Willis Parts</a></p>
+                                        <p class="detail_link"><a href="chrysler-parts/index.html">Valiant Parts.</a></p>
+                                        <p class="detail_link"><a href="vauxhall-parts/index.html">Vauxhall Parts.</a><a href="vw-parts/index.html"> <br></a></span></p>
+                                        <p class="detail_link"><a href="vw-parts/index.html">Volkswagen Parts.</a></p>
+                                        <p class="detail_link"><a href="volvo-parts/index.html">Volvo</a></p>
+                                        <p class="detail_link"><a href="wolseley-parts/index.html">Wolseley Parts.</a></p>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseAccessories" aria-expanded="false" aria-controls="collapseTwo">
+                                            Accessories
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseAccessories" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="detail_link"><a href="accessories/wheels/">Lights - Lamps</a></p>
+                                        <p class="detail_link"><a href="accessories/carpet"> carpet</a></p>
+                                        <p class="detail_link"><a href="accessories/carburetors"> carburetors</a></p>
+                                        <p class="detail_link"><a href="accessories/dynamo">Dynamo.</a></p>
+                                        <p class="detail_link"><a href="accessories/magneto">Magneto</a></p>
+                                        <p class="detail_link"><a href="accessories/speedometers">Speedometers e</a></p>
+                                        <p class="detail_link"><a href="wheels/">Tyres.</a> - <a href="wheels/">Wheels.</a></p>
+                                        
+                                        <p class="detail_link"><a href="stationary-parts/index.html"> Stationary Engines</a></p>
+                                        <p class="detail_link"><a href="">Southern Cross Registry</a></span><span id="PubSt23F"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTractor" aria-expanded="false" aria-controls="collapseTractor">
+                                            Tractor Parts
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTractor" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="detail_link"><a href="tractor-parts/index.html">Alice Chalmers</a></p>
+                                    <p class="detail_link"><a href="">Minneapolis Moline</a></p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseCountry" aria-expanded="false" aria-controls="collapseCountry">
+                                            Country, Land
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseCountry" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="detail_link"><a href="australia/index.html">AUSTRALIA</a></p>
+                                        <p class="detail_link"><a href="australia/queensland/index.html">Queensland</a></p>
+                                        <p class="detail_link"><a href="australia/victoria/index.html">Victoria</a></p>
+                                        <p class="detail_link"><a href="australia/nsw/index.html">NSW</a></p>
+                                        <p class="detail_link"><a href="australia/south-australia/index.html">South Aust</a></p>
+                                        <p class="detail_link"><a href="australia/tasmania/index.html">Tasmania</a></p>
+                                        <p class="detail_link"><a href="australia/nt/index.html">NT</a></p>
+                                        <p class="detail_link"><a href="canada/index.html">Canada</a></p>
+                                        <p class="detail_link"><a href="new-zealand/index.html">New Zealand</a></p>
+                                        <p class="detail_link"><a href="uk/index.html">UK</a></p>
+                                        <p class="detail_link"><a href="norway/index.html">Norway</a></p>
+                                        <p class="detail_link"><a href="norway/sweden.html">Sweden</a></p>
+                                        <p class="detail_link"><a href="norway/denmark.html">Denmark</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingLocal">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseLocal" aria-expanded="false" aria-controls="collapseLocal">
+                                            Local Navigation
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseLocal" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="detail_link"><a href="alabama/index.html">Alabama</a></p>
+                                        <p class="detail_link"><a href="alaska/index.html">Alaska</a></p>
+                                        <p class="detail_link"><a href="arizona/index.html">Arizona</a></p>
+                                        <p class="detail_link"><a href="arkansas/index.html">Arkansas</a></p>
+                                        <p class="detail_link"><a href="">California</a></p>
+                                        <p class="detail_link"><a href="colorado/index.html">Colorado</a></p>
+                                        <p class="detail_link"><a href="connecticut/index.html">Connecticut</a></p>
+                                        <p class="detail_link"><a href="delaware/index.html">Delaware</a></p>
+                                        <p class="detail_link"><a href="florida/index.html">Florida</a></p>
+                                        <p class="detail_link"><a href="georgia/index.html">Georgia</a></p>
+                                        <p class="detail_link"><a href="idaho/index.html">Idaho</a></p>
+                                        <p class="detail_link"><a href="illinois/index.html">Illinois</a></p>
+                                        <p class="detail_link"><a href="indiana/index.html">Indiana</a></p>
+                                        <p class="detail_link"><a href="iowa/index.html">Iowa</a></p>
+                                        <p class="detail_link"><a href="kansas/index.html">Kansas</a></p>
+                                        <p class="detail_link"><a href="kentucky/index.html">Kentucky</a></p>
+                                        <p class="detail_link"><a href="louisiana/index.html">Louisiana</a></p>
+                                        <p class="detail_link"><a href="maryland/index.html">Maryland</a></p>
+                                        <p class="detail_link"><a href="maine/index.html">Maine</a></p>
+                                        <p class="detail_link"><a href="massachusetts/index.html">Massachusetts</a></p>
+                                        <p class="detail_link"><a href="mexico/index.html">Mexico</a></p>
+                                        <p class="detail_link"><a href="michigan/index.html">Michigan</a></p>
+                                        <p class="detail_link"><a href="minnesota/index.html">Minnesota</a></p>
+                                        <p class="detail_link"><a href="mississippi/index.html">Mississippi</a></p>
+                                        <p class="detail_link"><a href="missouri/index.html">Missouri</a></p>
+                                        <p class="detail_link"><a href="montana/index.html">Montana</a></p>
+                                        <p class="detail_link"><a href="north-carolina/index.html">N Carolina</a></p>
+                                        <p class="detail_link"><a href="south-dakota/index.html">N Dakota</a></p>
+                                        <p class="detail_link"><a href="nebraska/index.html">Nebraska</a></p>
+                                        <p class="detail_link"><a href="new-hampshire/index.html">N Hampshire</a></p>
+                                        <p class="detail_link"><a href="new-jersey/index.html">N Jersey</a></p>
+                                        <p class="detail_link"><a href="new-mexico/index.html">N Mexico</a></p>
+                                        <p class="detail_link"><a href="nevada/index.html">Nevada</a></p>
+                                        <p class="detail_link"><a href="">New York</a></p>
+                                        <p class="detail_link"><a href="ohio/index.html">Ohio</a></p>
+                                        <p class="detail_link"><a href="oklahoma/index.html">Oklahoma</a></p>
+                                        <p class="detail_link"><a href="oregon/index.html">Oregon</a></p>
+                                        <p class="detail_link"><a href="pennsylvania/index.html">Pennsylvania</a></p>
+                                        <p class="detail_link"><a href="rhode-island/index.html">Rhode Island</a></p>
+                                        <p class="detail_link"><a href="south-dakota/index.html">South Dakota</a></p>
+                                        <p class="detail_link"><a href="south-carolina/index.html">South Carolina</a></p>
+                                        <p class="detail_link"><a href="tennessee/index.html">Tennessee</a></p>
+                                        <p class="detail_link"><a href="texas/index.html">Texas</a></p>
+                                        <p class="detail_link"><a href="utah/index.html">Utah</a></p>
+                                        <p class="detail_link"><a href="vermont/index.html">Vermont</a></p>
+                                        <p class="detail_link"><a href="virginia/index.html">Virginia</a></p>
+                                        <p class="detail_link"><a href="washington/index.html">Washington</a></p>
+                                        <p class="detail_link"><a href="west-virginia/index.html">West Virginia</a></p>
+                                        <p class="detail_link"><a href="wisconsin/index.html">Wisconsin</a></p>
+                                        <p class="detail_link"><a href="wyoming/index.html">Wyoming</a></p>
+                                        <p class="detail_link"><a href="puerto-rico/index.html">Puerto Rico</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 right_block">
+
+                    <h6>Some of many 1000's of classic car parts wanted</h6>
+
+                    <p class="right_detail"><span class="detail_time">1953 Willys question</span> - Looking for tail light lens (rear) for 1953 Willys Aero Ace. Mine are cracked and faded would like to replace with new (?) lens. Can anyone supply me a contact? </p>
+                    <p class="right_detail"><span class="detail_time">1933 Chevrolet Master</span> 5 window coupe. parts wanted -Hood vent door and finger pull Texas; Sugar Land </p>
+                    <p class="right_detail"><span class="detail_time">1940 Chevy</span> i need the crest or shield - It is between the flags on the hood closest to the grill. - Clarksville Michigan - </p>
+                    <p class="right_detail"><span class="detail_time">1928 Hupmobile Century Six </span>A6 part wanted: Rear bumper with mounting brackets, gas cap and radiator cap. Salinas, CA Jim 831-455-5105.</p>
+                    <p class="right_detail"><span class="detail_time">1929 Chev Coupe</span> - Looking for a fuel pump - Alberta Canada </p>
+                    <p class="right_detail"><span class="detail_time">1936 chevy coupe</span> looking for front fenders and running boards. Pascoag, RI<br/>ph 401-710-7645</p>
+                    <p class="right_detail"><span class="detail_time">1971 Chevrolet impala</span> or caprice project. wanted demotte, in </p>
+                    <p class="right_detail"><span class="detail_time">1948 Hudson</span> - Looking for a hood Tracy Stevens </p>
+                    <p class="right_detail"><span class="detail_time">1939 Chevy Coupe</span> - parts wanted - Deluxe 85 Seat Track Ashland (Ohio) </p>
+                    <p class="right_detail"><span class="detail_time">1940 plymouth p10</span> - wanted glove box door button - Chambly (Quebec) </p>
+                    <p class="right_detail"><span class="detail_time">1939 Chevrolet sedan</span> - parts wanted delivery body, rough, rusty, possibly in california.. thanks, Citrus Heights; California</p>
+                    <p class="right_detail"><span class="detail_time">1970 Oldsmobile 442</span> - parts wanted Kick panels for non A/C car. Looking for black, drivers and passenger side. Boston (Massachusetts)</p>
+                           
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
